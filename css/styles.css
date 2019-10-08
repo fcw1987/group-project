@@ -1,0 +1,11 @@
+.container {
+  background-color: tan;
+  padding: 20px;
+
+}
+.jumbotron {
+  background-color: red;
+  text-align: center;
+  color: black;
+
+}
