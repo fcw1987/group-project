@@ -15,16 +15,22 @@
     <div class="jumbotron">
       <h1><b>Welcome to Hotel Epicodus.</b></h1>
     </div>
-      <div class="form-group">
-        <label class=".radio-inline"><input type="radio" value=""><b> STANDARD</b>
-        </label>
-        <label class=".radio-inline"><input type="radio" value=""><b> PRESIDENTIAL</b>
-        </label>
-        <label class=".radio-inline"><input type="radio" value=""><b> PENTHOUSE</b>
-        </label>
-        <label class=".radio-inline"><input type="radio" value=""><b> HONEYMOON</b>
-        </label>
-    </div>
+      <div class="">
+        <form class="form-group" action="index.html" method="post">
+          <label class=".radio-inline"><b> STANDARD</b>
+          </label><input type="radio" value="1">
+
+          <label class=".radio-inline"><b> PRESIDENTIAL</b>
+          </label><input type="radio" value="2">
+
+          <label class=".radio-inline"><b> PENTHOUSE</b>
+          </label><input type="radio" value="3">
+
+          <label class=".radio-inline"><b> HONEYMOON</b>
+          </label><input type="radio" value="4">
+        </form>
+
+      </div>
 
 
         <div class="standard">
@@ -51,6 +57,10 @@
           <button type="submit" class="submitButton" name="button">Submit</button>
         </div>
 
+
+        <div class="resultOutput">
+          <h4>You have booked "Room" for "nights" and it will cost you "total price". Enjoy your stay at Hotel Epicodus!</h4>
+        </div>
 
 
 
