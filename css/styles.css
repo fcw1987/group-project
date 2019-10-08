@@ -21,3 +21,16 @@
   text-align: center;
   margin: 0 75px 0 75px;
 } */
+
+#standardRoom {
+  visibility: hidden;
+}
+#presidentialRoom {
+  visibility: hidden;
+}
+#penthouseRoom {
+  visibility: hidden;
+}
+#honeymoonRoom {
+  visibility: hidden;
+}
