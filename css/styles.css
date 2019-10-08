@@ -23,14 +23,19 @@
 } */
 
 #standardRoom {
-  visibility: hidden;
+  visibility: show;
+  text-align: center;
+
 }
 #presidentialRoom {
-  visibility: hidden;
+  visibility: show;
+  text-align: center;
 }
 #penthouseRoom {
-  visibility: hidden;
+  visibility: show;
+  text-align: center;
 }
 #honeymoonRoom {
-  visibility: hidden;
+  visibility: show;
+  text-align: center;
 }
