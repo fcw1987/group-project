@@ -50,15 +50,29 @@
           <h5>20 rooms available</h5>
         </div>
 
-
-        <div class="userInput">
+<!-- FCW -->
+        <!-- <div class="userInput">
           <label>How many night will you be staying?</label>
-          <input type="text" class="form-control" id="userInput">
+          <input type="date" class="form-control" id="userInput">
           <button type="submit" class="submitButton" name="button">Submit</button>
-        </div>
+        </div> -->
+        <body>
+          <div class="userInput">
+            <form id="form1" action="" method="" onSubmit="event.preventDefault(); getTimeBetweenDates();">
+              <input type="date" id="date1">
+              <input type="date" id="date2">
+            </form>
 
+            <br>
+            <button type="submit" form="form1" value="Send">Send</button>
+            <br>
+<!-- CC/JR -->
+            <!-- <p id="showdiff"><br>
+              </p>
+              <p>Is how many nights you'll be with us</p>
+              </div> -->
 
-        <div class="resultOutput">
+        <div id="resultOutput">
           <h4>You have booked "Room" for "nights" and it will cost you "total price". Enjoy your stay at Hotel Epicodus!</h4>
         </div>
 
