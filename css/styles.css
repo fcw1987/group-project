@@ -1,12 +1,17 @@
+body {
+  background-color: yellow;
+}
 .container {
   background-color: blue;
-  padding: 20px;
+  padding: 100px;
 
 }
-.jumbotron {
+.well {
   background-color: yellow;
   text-align: center;
   color: black;
+  border-style: solid;
+  border-color: white;
 
 }
 
@@ -21,3 +26,24 @@
   text-align: center;
   margin: 0 75px 0 75px;
 } */
+
+#standardRoom {
+  display: none;
+  text-align: center;
+}
+#presidentialRoom {
+  display: none;
+  text-align: center;
+}
+#penthouseRoom {
+  display: none;
+  text-align: center;
+}
+#honeymoonRoom {
+  display: none;
+  text-align: center;
+}
+#resultOutput {
+  visibility: hidden;
+  text-align: center;
+}
