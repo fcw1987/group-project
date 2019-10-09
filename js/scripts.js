@@ -31,16 +31,16 @@ function getTimeBetweenDates(e) {
 
 
 
-$(document).ready(function() {
-   $('input name=["standardRoomRadio"]').click(function(){
-    $("#standardRoom").show();
-});
-});
+// $(document).ready(function() {
+//    $('input name=["standardRoomRadio"]').click(function(){
+//     $("#standardRoom").show();
+// });
+// });
 
 $(document).ready(function(){
   $("form#hotelEpicodus").submit(function(){
     event.preventDefault();
-    var roomOption = calculate()
+    var roomOption = parseInt($("#roomOption").val());
     console.log("Thanks for booking ith us" + roomOption)
 
     if (roomOption === 1) {
