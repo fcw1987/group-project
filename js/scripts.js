@@ -29,8 +29,50 @@ function getTimeBetweenDates(e) {
   }
 }
 
+
+
 $(document).ready(function() {
    $('input name=["standardRoomRadio"]').click(function(){
     $("#standardRoom").show();
 });
 });
+
+$(document).ready(function(){
+  $("form#hotelEpicodus").submit(function(){
+    event.preventDefault();
+    var roomOption = calculate()
+    console.log("Thanks for booking ith us" + roomOption)
+
+    if (roomOption === 1) {
+      $("#standardRoom").show();
+      $("#presidentialRoom").hide();
+      $("#penthouseRoom").hide();
+      $("#honeymoonRoom").hide();
+
+    } else if (roomOption === 2) {
+      $("#standardRoom").hide();
+      $("#presidentialRoom").show();
+      $("#penthouseRoom").hide();
+      $("#honeymoonRoom").hide();
+    } else if (roomOption === 3) {
+      $("#standardRoom").hide();
+      $("#presidentialRoom").hide();
+      $("#penthouseRoom").show();
+      $("#honeymoonRoom").hide();
+
+    } else {
+      $("#standardRoom").hide();
+      $("#presidentialRoom").hide();
+      $("#penthouseRoom").hide();
+      $("#honeymoonRoom").show();
+    }
+  })
+
+});
+
+
+function calculate() {
+  var roomOption = parseInt($("#roomOption").val());
+
+  return roomOption;
+};
