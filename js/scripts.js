@@ -28,3 +28,9 @@ function getTimeBetweenDates(e) {
     document.getElementById("resultOutput").innerHTML = "Equal dates";
   }
 }
+
+$(document).ready(function() {
+   $('input name=["standardRoomRadio"]').click(function(){
+    $("#standardRoom").show();
+});
+});

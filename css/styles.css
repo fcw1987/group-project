@@ -1,12 +1,17 @@
+body {
+  background-color: yellow;
+}
 .container {
   background-color: blue;
-  padding: 20px;
+  padding: 100px;
 
 }
-.jumbotron {
+.well {
   background-color: yellow;
   text-align: center;
   color: black;
+  border-style: solid;
+  border-color: white;
 
 }
 
@@ -36,5 +41,9 @@
 }
 #honeymoonRoom {
   display: none;
+  text-align: center;
+}
+#resultOutput {
+  visibility: hidden;
   text-align: center;
 }
