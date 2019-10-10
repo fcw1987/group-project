@@ -1,4 +1,4 @@
-function getTimeBetweenDates(e) {
+function getTimeBetweenDates() {
   var date1 = new Date(document.getElementById("date1").value);
   var date2 = new Date(document.getElementById("date2").value);
 
@@ -23,9 +23,9 @@ function getTimeBetweenDates(e) {
   if (days > 1) dayTxt += "s";
 
   if (years >= 0) {
-    document.getElementById("resultOutput").innerHTML = years + " " + yearTxt + ", " + months + " " + monthTxt + ", " + days + " " + dayTxt;
+    document.getElementById("dateOutput").innerHTML = years + " " + yearTxt + ", " + months + " " + monthTxt + ", " + days + " " + dayTxt;
   } else {
-    document.getElementById("resultOutput").innerHTML = "Equal dates";
+    document.getElementById("dateOutput").innerHTML = "Equal dates";
   }
 }
 
@@ -40,9 +40,17 @@ function getTimeBetweenDates(e) {
 $(document).ready(function(){
   $("form#hotelEpicodus").submit(function(){
     event.preventDefault();
+    getTimeBetweenDates();
     var roomOption = parseInt($("#roomOption").val());
-    console.log("Thanks for booking ith us" + roomOption)
+    console.log("Thanks for booking with us" + roomOption)
+    pickRoom(roomOption)
+    $("#resultOutput").show();
+  })
 
+});
+
+
+function pickRoom(roomOption) {
     if (roomOption === 1) {
       $("#standardRoom").show();
       $("#presidentialRoom").hide();
@@ -66,13 +74,4 @@ $(document).ready(function(){
       $("#penthouseRoom").hide();
       $("#honeymoonRoom").show();
     }
-  })
-
-});
-
-
-function calculate() {
-  var roomOption = parseInt($("#roomOption").val());
-
-  return roomOption;
-};
+  }
