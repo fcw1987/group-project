@@ -2,7 +2,7 @@ _Group Project_
 
 ### Group project for Epicodus.  10/9/2019
 
-###  By Serrato Touch, Franklin Waggoner, Josh Raglione and Colman Currie
+###  By Serrado Touch, Franklin Waggoner, Josh Raglione and Colman Currie
 
 
 
@@ -57,4 +57,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Copyright (c) 2019 **_{Colman Currie, Josh Raglione, Franklin Waggoner and Serrato Touch}_**
+Copyright (c) 2019 **_{Colman Currie, Josh Raglione, Franklin Waggoner and Serrado Touch}_**
