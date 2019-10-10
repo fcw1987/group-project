@@ -1,93 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-   <head>
-      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-         <link href="css/styles.css" rel="stylesheet" type="text/css">
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-         <script src="js/scripts.js"></script>
-         <meta charset="utf-8"> -->
-      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-      <link href="css/styles.css" rel="stylesheet" type="text/css">
-      <script src="js/jquery-3.4.1.js"></script>
-      <script src="js/scripts.js"></script>
-      <title>Hotel Epicodus</title>
-   </head>
-   <body>
-      <div class="container">
-      <form id="hotelEpicodus">
-         <div class="well well-lg">
-            <h1><b>Welcome to Hotel Epicodus.</b></h1>
-         </div>
-         <div class="radioGroup">
-            <!-- <form class="form-group" action="index.html" method="post">
-               <input type="radio" value="1" name="roomDivs" id="standardRoomRadio">
-               <label class=".radio-inline"><b> STANDARD</b></label>
 
-               <input type="radio" value="2" name="roomDivs">
-               <label class=".radio-inline"><b> PRESIDENTIAL</b></label>
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Hotel Epicodus</title>
+</head>
 
-               <input type="radio" value="3" name="roomDivs">
-               <label class=".radio-inline"><b> PENTHOUSE</b></label>
-
-               <input type="radio" value="4" name="roomDivs">
-               <label class=".radio-inline"><b> HONEYMOON</b></label>
-               </form> -->
-            <h4>Please select your room type</h4>
-            <div class="form-group">
-               <select class="form-control" id="roomOption">
-                  <option></option>
-                  <option value="1">Standard Room</option>
-                  <option value="2">Presidential Suite</option>
-                  <option value="3">Penthouse Suite</option>
-                  <option value="4">Honeymoon Suite</option>
-               </select>
+<body>
+    <div class="container">
+        <form id="hotelEpicodus">
+            <div class="well well-lg">
+                <h1><b>Welcome to Hotel Epicodus.</b></h1>
             </div>
-         </div>
-         <!-- FCW -->
-         <!-- <div class="userInput">
-            <label>How many night will you be staying?</label>
-            <input type="date" class="form-control" id="userInput">
-            <button type="submit" class="submitButton" name="button">Submit</button>
-            </div> -->
-         <!-- <body> -->
+            <div class="radioGroup">
+                <h4>Please select your room type</h4>
+                <div class="form-group">
+                    <select class="form-control" id="roomOption">
+                        <option></option>
+                        <option value="1">Standard Room</option>
+                        <option value="2">Presidential Suite</option>
+                        <option value="3">Penthouse Suite</option>
+                        <option value="4">Honeymoon Suite</option>
+                    </select>
+                </div>
+            </div>
+
             <div class="userInput">
-               <!-- <form id="form1" action="" method="" onSubmit="event.preventDefault(); getTimeBetweenDates();"> -->
-                  <input type="date" id="date1">
-                  <input type="date" id="date2">
-                  <!-- </form> -->
-               <br>
-               <button type="submit" value="Send">Book now</button>
-               <br>
-               <div id="resultOutput">
-                 <span id="dateOutput"></span>
-                  <div id="standardRoom">
-                     <h4>$100 per night</h4>
-                     <p>Thanks for booking with us!</p>
-                     <img src="image/standard.jpg" alt="Standard Hotel Room" height="200" width="275">
-                  </div>
-                  <div id="presidentialRoom">
-                     <h4>$200 per night</h4>
-                     <p>Thanks for booking with us!</p>
-                     <img src="image/presidential.jpg" alt="Presidential Suite" height="200" width="275">
-                  </div>
-                  <div id="honeymoonRoom">
-                     <h4>$300 per night</h4>
-                     <p>Thanks for booking with us!</p>
-                     <img src="image/honeymoon.jpg" alt="HoneyMoon Suite" height="200" width="275">
-                  </div>
-                  <div id="penthouseRoom">
-                     <h4>$400 per night</h4>
-                     <p>Thanks for booking with us!</p>
-                     <img src="image/penthouse.jpg" alt="Penthouse Suite" height="200" width="275">
-                  </div>
-               </div>
-               <!-- CC/JR -->
-               <!-- <p id="showdiff"><br>
-                  </p>
-                  <p>Is how many nights you'll be with us</p>
-                  </div> -->
-      </form>
-      </div>
-   </body>
+                <input type="date" id="date1">
+                <input type="date" id="date2">
+                <br>
+                <button type="submit" value="Send">Book now</button>
+                <br>
+                <div id="resultOutput">
+                    <span id="dateOutput"></span>
+                    <div id="standardRoom">
+                        <h4>$100 per night</h4>
+                        <p id="prices"></p>
+                        <p>Thanks for booking with us!</p>
+                        <img src="image/standard.jpg" alt="Standard Hotel Room" height="200" width="275">
+                    </div>
+                    <div id="presidentialRoom">
+                        <h4>$200 per night</h4>
+                        <p id="prices"></p>
+                        <p>Thanks for booking with us!</p>
+                        <img src="image/presidential.jpg" alt="Presidential Suite" height="200" width="275">
+                    </div>
+                    <div id="honeymoonRoom">
+                        <h4>$300 per night</h4>
+                        <p id="prices"></p>
+                        <p>Thanks for booking with us!</p>
+                        <img src="image/honeymoon.jpg" alt="HoneyMoon Suite" height="200" width="275">
+                    </div>
+                    <div id="penthouseRoom">
+                        <h4>$400 per night</h4>
+                        <p id="prices"></p>
+                        <p>Thanks for booking with us!</p>
+                        <img src="image/penthouse.jpg" alt="Penthouse Suite" height="200" width="275">
+                    </div>
+                </div>
+
+        </form>
+        </div>
+</body>
+
 </html>
