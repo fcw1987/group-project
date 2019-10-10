@@ -22,14 +22,22 @@ body {
 
 }
 h4 {
-  color: yellow;
+  color: black;
 }
 p {
-  color: yellow;
+  color: black;
+}
+
+img{
+  border: 5px solid black;
+  border-radius: 4px;
+  width: 150px;
+  height: 500px;
+  width: 800px;
 }
 
 #dateOutput {
-  color: yellow;
+  color: black;
 }
 #standardRoom {
   display: none;
