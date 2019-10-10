@@ -1,13 +1,13 @@
 body {
-  background-color: yellow;
+  background-color: #c5e6cb;
 }
 .container {
-  background-color: blue;
+  background-color: #066b80;
   padding: 100px;
 
 }
 .well {
-  background-color: yellow;
+  background-color: #c5e6cb;
   text-align: center;
   color: black;
   border-style: solid;
