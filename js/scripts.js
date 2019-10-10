@@ -31,6 +31,25 @@ const diffDays = Math.round(Math.abs((date2 - date1) / oneDay));
   // } else {
   //   document.getElementById("dateOutput").innerHTML = "Equal dates";
   // }
+  // var pickRoom = priceCheck();
+  // function priceCheck(diffDays, price){
+  //   if (pickRoom===1) {
+  //       return 100 * diffDays;
+  //   } else if (pickRoom===2) {
+  //     return 200 * diffdays;
+  //   } else if (pickRoom===3) {
+  //     return 300 * diffDays;
+  //   } else if (pickRoom===4) {
+  //     return 400 * diffDays;
+  //
+  //   } else {
+  //     return false;
+  //   }
+  //
+  // }
+
+// console.log(diffDays)
+
 }
 
 
@@ -46,7 +65,6 @@ $(document).ready(function(){
     event.preventDefault();
     getTimeBetweenDates();
     var roomOption = parseInt($("#roomOption").val());
-    console.log("Thanks for booking with us" + roomOption)
     pickRoom(roomOption)
     $("#resultOutput").show();
   })
@@ -78,4 +96,20 @@ function pickRoom(roomOption) {
       $("#penthouseRoom").hide();
       $("#honeymoonRoom").show();
     }
+  }
+
+  function priceCheck(diffDays, price){
+    if (pickRoom===1) {
+        return 100 * diffDays;
+    } else if (pickRoom===2) {
+      return 200 * diffdays;
+    } else if (pickRoom===3) {
+      return 300 * diffDays;
+    } else if (pickRoom===4) {
+      return 400 * diffDays;
+
+    } else {
+      return false;
+    }
+
   }
