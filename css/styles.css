@@ -21,6 +21,9 @@ body {
   padding:10px;
 
 }
+h4 {
+  color: yellow;
+}
 
 /* .radio-inline {
   text-align: center;
@@ -29,21 +32,23 @@ body {
 
 #standardRoom {
   display: none;
-  text-align: center;
+
+
 }
 #presidentialRoom {
   display: none;
-  text-align: center;
+
 }
 #penthouseRoom {
   display: none;
-  text-align: center;
+
 }
 #honeymoonRoom {
   display: none;
-  text-align: center;
+
 }
 #resultOutput {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
   text-align: center;
 }
